@@ -3,4 +3,4 @@
 # except files in this directory.
 !/*
 # except devcontainer configuration directory.
-!/.devcontainer
+!/.devcontainer/
