@@ -1,6 +1,6 @@
-# ignore all files,
-*
-# except files in this directory.
-!/*
-# except devcontainer configuration directory.
-!/.devcontainer/*
+# ignore work dir
+/pico/**
+
+# ignore python env
+.venv
+venv
