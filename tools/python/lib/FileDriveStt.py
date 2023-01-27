@@ -44,6 +44,10 @@ class FileStt():
         else:
             print("  current_ts:None")
 
+    def __repr__(self):
+        kws = [f"{key}={value!r}" for key, value in self.__dict__.items()]
+        return "{}({})".format(type(self).__name__, ", ".join(kws))
+
 class DriveStt():
     @staticmethod
     def get_all_drives():
