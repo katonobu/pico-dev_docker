@@ -1,6 +1,11 @@
 # ignore work dir
 /pico/**
 
+# ignore rzpp binary
+*.uf2
+*.bin
+*.elf
+
 # ignore python env
 .venv
 venv
