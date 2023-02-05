@@ -6,6 +6,9 @@
 *.bin
 *.elf
 
+# ignore python cache
+*.pyc
+
 # ignore python env
 .venv
 venv
