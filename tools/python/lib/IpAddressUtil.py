@@ -14,6 +14,15 @@ def get_ipaddress_from_interface_uid(uid):
 def get_interface_uids():
     return netifaces.interfaces()
 
+def specified_ipaddress_exist(ip_addr):
+    ret_val = False
+    interfaces = get_interface_uids()
+    for intf in interfaces:
+        if ip_addr == get_ipaddress_from_interface_uid(intf):
+            ret_val = True
+            break
+    return ret_val
+
 #print(get_ipaddress_from_interface_uid('{807888C9-7BD5-4966-B923-0CAE7908D1A7}'))
 
 if __name__ == '__main__':
